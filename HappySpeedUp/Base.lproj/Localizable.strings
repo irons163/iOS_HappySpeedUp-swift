@@ -1,0 +1,8 @@
+/*
+  Localizable.strings
+  HappySpeedUp
+
+  Swift port. Maps the localized house-ad image key to its asset name.
+*/
+
+"cat_shoot_ad" = "en_attack_on_gaint_cat_ad.jpg";
