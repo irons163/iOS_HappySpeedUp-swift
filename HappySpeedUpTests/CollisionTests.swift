@@ -50,4 +50,22 @@ final class CollisionTests: XCTestCase {
         XCTAssertTrue(GameEngine.isCollision(playerFrame: offsetPlayer, objectFrame: hit))
         XCTAssertFalse(GameEngine.isCollision(playerFrame: offsetPlayer, objectFrame: miss))
     }
+
+    func testEdgeTouchingReturnsFalse() {
+        // Object's left edge sits exactly on the hit-box's right edge (x = 30).
+        // CGRect intersection of edge-only contact is false.
+        let object = CGRect(x: 30, y: 15, width: 5, height: 5)
+        XCTAssertFalse(GameEngine.isCollision(playerFrame: playerFrame, objectFrame: object))
+    }
+
+    func testObjectMatchingHitBoxReturnsTrue() {
+        // Exactly the centre 50% hit-box (x[10,30], y[10,30]).
+        let object = CGRect(x: 10, y: 10, width: 20, height: 20)
+        XCTAssertTrue(GameEngine.isCollision(playerFrame: playerFrame, objectFrame: object))
+    }
+
+    func testObjectEnclosingPlayerReturnsTrue() {
+        let object = CGRect(x: -50, y: -50, width: 200, height: 200)
+        XCTAssertTrue(GameEngine.isCollision(playerFrame: playerFrame, objectFrame: object))
+    }
 }

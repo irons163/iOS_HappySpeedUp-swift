@@ -23,6 +23,9 @@
 		DEAD0000000000000000020E /* GameCenterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000010E /* GameCenterUtil.swift */; };
 		DEAD0000000000000000020F /* MyADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000010F /* MyADView.swift */; };
 		DEAD00000000000000000210 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000110 /* MyUtils.swift */; };
+		DEAD00000000000000000211 /* GameScene+Walls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000111 /* GameScene+Walls.swift */; };
+		DEAD00000000000000000212 /* GameScene+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000112 /* GameScene+Tools.swift */; };
+		DEAD00000000000000000213 /* GameScene+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000113 /* GameScene+UI.swift */; };
 		DEAD0000000000000000002F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000002D /* Main.storyboard */; };
 		DEAD00000000000000000032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000030 /* LaunchScreen.storyboard */; };
 		DEAD00000000000000000035 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000033 /* Localizable.strings */; };
@@ -68,6 +71,13 @@
 		DEAD00000000000000000604 /* WallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000504 /* WallTests.swift */; };
 		DEAD00000000000000000605 /* ToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000505 /* ToolTests.swift */; };
 		DEAD00000000000000000606 /* BitmapUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000506 /* BitmapUtilTests.swift */; };
+		DEAD00000000000000000607 /* TextureHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000507 /* TextureHelperTests.swift */; };
+		DEAD00000000000000000608 /* GameSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000508 /* GameSceneTests.swift */; };
+		DEAD00000000000000000609 /* GameEngineLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD00000000000000000509 /* GameEngineLifecycleTests.swift */; };
+		DEAD0000000000000000060A /* GameConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000050A /* GameConstantsTests.swift */; };
+		DEAD0000000000000000060B /* CommonUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000050B /* CommonUtilTests.swift */; };
+		DEAD0000000000000000060C /* MyUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000050C /* MyUtilsTests.swift */; };
+		DEAD0000000000000000060D /* GameCenterUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAD0000000000000000050D /* GameCenterUtilTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +115,9 @@
 		DEAD0000000000000000010E /* GameCenterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterUtil.swift; sourceTree = "<group>"; };
 		DEAD0000000000000000010F /* MyADView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyADView.swift; sourceTree = "<group>"; };
 		DEAD00000000000000000110 /* MyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
+		DEAD00000000000000000111 /* GameScene+Walls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Walls.swift"; sourceTree = "<group>"; };
+		DEAD00000000000000000112 /* GameScene+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Tools.swift"; sourceTree = "<group>"; };
+		DEAD00000000000000000113 /* GameScene+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+UI.swift"; sourceTree = "<group>"; };
 		DEAD00000000000000000301 /* 2048_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2048_ad.png; sourceTree = "<group>"; };
 		DEAD00000000000000000302 /* HappyDownStages_AD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HappyDownStages_AD.png; sourceTree = "<group>"; };
 		DEAD00000000000000000303 /* Shoot_Learning_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shoot_Learning_ad.png; sourceTree = "<group>"; };
@@ -146,6 +159,13 @@
 		DEAD00000000000000000504 /* WallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallTests.swift; sourceTree = "<group>"; };
 		DEAD00000000000000000505 /* ToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTests.swift; sourceTree = "<group>"; };
 		DEAD00000000000000000506 /* BitmapUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmapUtilTests.swift; sourceTree = "<group>"; };
+		DEAD00000000000000000507 /* TextureHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureHelperTests.swift; sourceTree = "<group>"; };
+		DEAD00000000000000000508 /* GameSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneTests.swift; sourceTree = "<group>"; };
+		DEAD00000000000000000509 /* GameEngineLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineLifecycleTests.swift; sourceTree = "<group>"; };
+		DEAD0000000000000000050A /* GameConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstantsTests.swift; sourceTree = "<group>"; };
+		DEAD0000000000000000050B /* CommonUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtilTests.swift; sourceTree = "<group>"; };
+		DEAD0000000000000000050C /* MyUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtilsTests.swift; sourceTree = "<group>"; };
+		DEAD0000000000000000050D /* GameCenterUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterUtilTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +211,9 @@
 				DEAD00000000000000000102 /* GameViewController.swift */,
 				DEAD00000000000000000103 /* GameOverViewController.swift */,
 				DEAD00000000000000000104 /* GameScene.swift */,
+				DEAD00000000000000000111 /* GameScene+Walls.swift */,
+				DEAD00000000000000000112 /* GameScene+Tools.swift */,
+				DEAD00000000000000000113 /* GameScene+UI.swift */,
 				DEAD00000000000000000105 /* GameEngine.swift */,
 				DEAD00000000000000000106 /* GameConstants.swift */,
 				DEAD00000000000000000107 /* GameDelegate.swift */,
@@ -222,6 +245,13 @@
 				DEAD00000000000000000504 /* WallTests.swift */,
 				DEAD00000000000000000505 /* ToolTests.swift */,
 				DEAD00000000000000000506 /* BitmapUtilTests.swift */,
+				DEAD00000000000000000507 /* TextureHelperTests.swift */,
+				DEAD00000000000000000508 /* GameSceneTests.swift */,
+				DEAD00000000000000000509 /* GameEngineLifecycleTests.swift */,
+				DEAD0000000000000000050A /* GameConstantsTests.swift */,
+				DEAD0000000000000000050B /* CommonUtilTests.swift */,
+				DEAD0000000000000000050C /* MyUtilsTests.swift */,
+				DEAD0000000000000000050D /* GameCenterUtilTests.swift */,
 				DEAD0000000000000000002C /* Info.plist */,
 			);
 			path = HappySpeedUpTests;
@@ -424,6 +454,9 @@
 				DEAD0000000000000000020E /* GameCenterUtil.swift in Sources */,
 				DEAD0000000000000000020F /* MyADView.swift in Sources */,
 				DEAD00000000000000000210 /* MyUtils.swift in Sources */,
+				DEAD00000000000000000211 /* GameScene+Walls.swift in Sources */,
+				DEAD00000000000000000212 /* GameScene+Tools.swift in Sources */,
+				DEAD00000000000000000213 /* GameScene+UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +470,13 @@
 				DEAD00000000000000000604 /* WallTests.swift in Sources */,
 				DEAD00000000000000000605 /* ToolTests.swift in Sources */,
 				DEAD00000000000000000606 /* BitmapUtilTests.swift in Sources */,
+				DEAD00000000000000000607 /* TextureHelperTests.swift in Sources */,
+				DEAD00000000000000000608 /* GameSceneTests.swift in Sources */,
+				DEAD00000000000000000609 /* GameEngineLifecycleTests.swift in Sources */,
+				DEAD0000000000000000060A /* GameConstantsTests.swift in Sources */,
+				DEAD0000000000000000060B /* CommonUtilTests.swift in Sources */,
+				DEAD0000000000000000060C /* MyUtilsTests.swift in Sources */,
+				DEAD0000000000000000060D /* GameCenterUtilTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

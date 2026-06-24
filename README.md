@@ -66,10 +66,24 @@ The `HappySpeedUpTests` target covers:
 - **GameEngineTests** – tap direction/speed flip, speed-up cap & sign handling,
   speed-down floor guard, fly state, the tool countdown timer and reset,
   collision flag, and the wall/tool lifecycle predicates.
-- **ScoringTests** – distance accumulation, the score-in-tens cadence and the
-  1500-point tool-spawn milestone.
-- **CollisionTests** – the centre-50% hit-box intersection rules.
+- **GameEngineLifecycleTests** – full eat → effect → countdown → reset cycles
+  for each tool, the fly reset-animation handshake, repeated-tap alternation
+  and the negative-sign / high-speed edge cases.
+- **ScoringTests** – distance accumulation, the score-in-tens cadence, the
+  cumulative distance formula and the 1500-point tool-spawn milestone.
+- **CollisionTests** – the centre-50% hit-box intersection rules, including
+  edge-touching, exact-match and enclosing cases.
 - **WallTests / ToolTests** – node lifecycle predicates, movement and the
   spawn-roll distribution.
 - **BitmapUtilTests** – aspect-ratio sizing with integer truncation.
+- **TextureHelperTests** – sprite-sheet frame geometry (normalisation, row
+  wrapping) and sequence selection.
+- **GameSceneTests** – the scene's exposed state and its bridge to GameEngine.
+- **GameConstantsTests** – locks the ported numeric constants and raw enum
+  mappings.
+- **BitmapUtilTests** – also covers the shared instance's player-width maths.
+- **CommonUtilTests** – the shared screen-dimension holder.
+- **MyUtilsTests** – background-music wrapper's safe no-audio behaviour.
+- **GameCenterUtilTests** – availability, singleton and saved-score queue
+  draining.
 # iOS_HappySpeedUp-swift

@@ -47,4 +47,16 @@ final class BitmapUtilTests: XCTestCase {
         XCTAssertEqual(size.width, 30)
         XCTAssertEqual(size.height, 0)
     }
+
+    func testSharedInstanceComputesPlayerWidth() {
+        // footbarWidth = 300 / 4 = 75; playerWidth = 75 / 2.5 = 30.
+        // Every game sprite is sized to that width; heights depend on the
+        // (absent in tests) textures, so only widths are asserted here.
+        let util = BitmapUtil.shared
+        XCTAssertEqual(util.wallSize.width, 30)
+        XCTAssertEqual(util.speedupSize.width, 30)
+        XCTAssertEqual(util.speeddownSize.width, 30)
+        XCTAssertEqual(util.flySize.width, 30)
+        XCTAssertGreaterThanOrEqual(util.wallSize.height, 0)
+    }
 }

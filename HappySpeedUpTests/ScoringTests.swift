@@ -64,4 +64,17 @@ final class ScoringTests: XCTestCase {
         XCTAssertEqual(engine.score, 10)
         XCTAssertFalse(scored.shouldSpawnTool)
     }
+
+    func testCumulativeScoreFollowsDistanceFormula() {
+        let engine = GameEngine()
+        // speedY == 7, so after K ticks total distance is 7K and score is
+        // 10 * floor(7K / 10) with the remainder carried in distanceCount.
+        for _ in 0..<10 { _ = engine.advanceDistance() }
+        XCTAssertEqual(engine.score, 70)      // 10 * floor(70 / 10)
+        XCTAssertEqual(engine.distanceCount, 0)
+
+        _ = engine.advanceDistance()           // total distance 77
+        XCTAssertEqual(engine.score, 70)
+        XCTAssertEqual(engine.distanceCount, 7)
+    }
 }

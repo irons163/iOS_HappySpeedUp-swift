@@ -47,4 +47,10 @@ final class ToolTests: XCTestCase {
         XCTAssertEqual(ToolType.from(spawnRoll: 3), .speedDown)
         XCTAssertEqual(ToolType.from(spawnRoll: 4), .fly)
     }
+
+    func testInvalidRawTypeFallsBackToSpeedUp() {
+        let tool = Tool()
+        tool.type = 99 // not a valid ToolType raw value
+        XCTAssertEqual(tool.toolType, .speedUp)
+    }
 }
